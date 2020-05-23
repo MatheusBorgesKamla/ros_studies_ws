@@ -1,0 +1,8 @@
+prefix=/home/matheus/Documentos/ros_studies_ws/install
+
+Name: servidor
+Description: Description of servidor
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

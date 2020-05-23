@@ -1,0 +1,8 @@
+prefix=/home/matheus/Documentos/ros_studies_ws/devel
+
+Name: publicador
+Description: Description of publicador
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

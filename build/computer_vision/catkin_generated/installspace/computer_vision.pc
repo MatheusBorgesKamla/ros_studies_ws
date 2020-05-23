@@ -1,0 +1,8 @@
+prefix=/home/matheus/Documentos/ros_studies_ws/install
+
+Name: computer_vision
+Description: Description of computer_vision
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: cv_bridge image_transport roscpp sensor_msgs

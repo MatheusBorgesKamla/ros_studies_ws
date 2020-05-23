@@ -97,6 +97,7 @@
 /home/matheus/Documentos/ros_studies_ws/build/computer_vision/CMakeFiles/geometry_msgs_generate_messages_eus.dir
 /home/matheus/Documentos/ros_studies_ws/build/computer_vision/CMakeFiles/rebuild_cache.dir
 /home/matheus/Documentos/ros_studies_ws/build/computer_vision/CMakeFiles/geometry_msgs_generate_messages_lisp.dir
+/home/matheus/Documentos/ros_studies_ws/build/computer_vision/CMakeFiles/image_pub_sub.dir
 /home/matheus/Documentos/ros_studies_ws/build/computer_vision/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir
 /home/matheus/Documentos/ros_studies_ws/build/robot_cleaner/CMakeFiles/install.dir
 /home/matheus/Documentos/ros_studies_ws/build/robot_cleaner/CMakeFiles/rebuild_cache.dir

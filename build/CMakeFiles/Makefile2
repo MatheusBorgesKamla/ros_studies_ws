@@ -778,7 +778,7 @@ clean: publicador/CMakeFiles/roscpp_generate_messages_nodejs.dir/clean
 publicador/CMakeFiles/publicador_node.dir/all:
 	$(MAKE) -f publicador/CMakeFiles/publicador_node.dir/build.make publicador/CMakeFiles/publicador_node.dir/depend
 	$(MAKE) -f publicador/CMakeFiles/publicador_node.dir/build.make publicador/CMakeFiles/publicador_node.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/matheus/Documentos/ros_studies_ws/build/CMakeFiles --progress-num=14,15 "Built target publicador_node"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/matheus/Documentos/ros_studies_ws/build/CMakeFiles --progress-num=16,17 "Built target publicador_node"
 .PHONY : publicador/CMakeFiles/publicador_node.dir/all
 
 # Include target in all.
@@ -1181,7 +1181,7 @@ servidor/preinstall:
 servidor/CMakeFiles/servidor_node.dir/all:
 	$(MAKE) -f servidor/CMakeFiles/servidor_node.dir/build.make servidor/CMakeFiles/servidor_node.dir/depend
 	$(MAKE) -f servidor/CMakeFiles/servidor_node.dir/build.make servidor/CMakeFiles/servidor_node.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/matheus/Documentos/ros_studies_ws/build/CMakeFiles --progress-num=20,21 "Built target servidor_node"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/matheus/Documentos/ros_studies_ws/build/CMakeFiles --progress-num=22,23 "Built target servidor_node"
 .PHONY : servidor/CMakeFiles/servidor_node.dir/all
 
 # Include target in all.
@@ -1236,7 +1236,7 @@ subscritor/preinstall:
 subscritor/CMakeFiles/subscritor_node.dir/all:
 	$(MAKE) -f subscritor/CMakeFiles/subscritor_node.dir/build.make subscritor/CMakeFiles/subscritor_node.dir/depend
 	$(MAKE) -f subscritor/CMakeFiles/subscritor_node.dir/build.make subscritor/CMakeFiles/subscritor_node.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/matheus/Documentos/ros_studies_ws/build/CMakeFiles --progress-num=22,23 "Built target subscritor_node"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/matheus/Documentos/ros_studies_ws/build/CMakeFiles --progress-num=24,25 "Built target subscritor_node"
 .PHONY : subscritor/CMakeFiles/subscritor_node.dir/all
 
 # Include target in all.
@@ -1271,6 +1271,7 @@ clean: subscritor/CMakeFiles/subscritor_node.dir/clean
 
 # Convenience name for "all" pass in the directory.
 computer_vision/all: computer_vision/CMakeFiles/read_video.dir/all
+computer_vision/all: computer_vision/CMakeFiles/image_pub_sub.dir/all
 
 .PHONY : computer_vision/all
 
@@ -1285,6 +1286,7 @@ computer_vision/clean: computer_vision/CMakeFiles/geometry_msgs_generate_message
 computer_vision/clean: computer_vision/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/clean
 computer_vision/clean: computer_vision/CMakeFiles/geometry_msgs_generate_messages_eus.dir/clean
 computer_vision/clean: computer_vision/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/clean
+computer_vision/clean: computer_vision/CMakeFiles/image_pub_sub.dir/clean
 computer_vision/clean: computer_vision/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/clean
 
 .PHONY : computer_vision/clean
@@ -1397,7 +1399,7 @@ clean: computer_vision/CMakeFiles/sensor_msgs_generate_messages_py.dir/clean
 computer_vision/CMakeFiles/read_video.dir/all:
 	$(MAKE) -f computer_vision/CMakeFiles/read_video.dir/build.make computer_vision/CMakeFiles/read_video.dir/depend
 	$(MAKE) -f computer_vision/CMakeFiles/read_video.dir/build.make computer_vision/CMakeFiles/read_video.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/matheus/Documentos/ros_studies_ws/build/CMakeFiles --progress-num=16,17 "Built target read_video"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/matheus/Documentos/ros_studies_ws/build/CMakeFiles --progress-num=18,19 "Built target read_video"
 .PHONY : computer_vision/CMakeFiles/read_video.dir/all
 
 # Include target in all.
@@ -1616,6 +1618,43 @@ computer_vision/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/clean:
 
 # clean rule for target.
 clean: computer_vision/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target computer_vision/CMakeFiles/image_pub_sub.dir
+
+# All Build rule for target.
+computer_vision/CMakeFiles/image_pub_sub.dir/all:
+	$(MAKE) -f computer_vision/CMakeFiles/image_pub_sub.dir/build.make computer_vision/CMakeFiles/image_pub_sub.dir/depend
+	$(MAKE) -f computer_vision/CMakeFiles/image_pub_sub.dir/build.make computer_vision/CMakeFiles/image_pub_sub.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/matheus/Documentos/ros_studies_ws/build/CMakeFiles --progress-num=14,15 "Built target image_pub_sub"
+.PHONY : computer_vision/CMakeFiles/image_pub_sub.dir/all
+
+# Include target in all.
+all: computer_vision/CMakeFiles/image_pub_sub.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+computer_vision/CMakeFiles/image_pub_sub.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/matheus/Documentos/ros_studies_ws/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 computer_vision/CMakeFiles/image_pub_sub.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/matheus/Documentos/ros_studies_ws/build/CMakeFiles 0
+.PHONY : computer_vision/CMakeFiles/image_pub_sub.dir/rule
+
+# Convenience name for target.
+image_pub_sub: computer_vision/CMakeFiles/image_pub_sub.dir/rule
+
+.PHONY : image_pub_sub
+
+# clean rule for target.
+computer_vision/CMakeFiles/image_pub_sub.dir/clean:
+	$(MAKE) -f computer_vision/CMakeFiles/image_pub_sub.dir/build.make computer_vision/CMakeFiles/image_pub_sub.dir/clean
+.PHONY : computer_vision/CMakeFiles/image_pub_sub.dir/clean
+
+# clean rule for target.
+clean: computer_vision/CMakeFiles/image_pub_sub.dir/clean
 
 .PHONY : clean
 
@@ -1841,7 +1880,7 @@ clean: robot_cleaner/CMakeFiles/turtlesim_generate_messages_py.dir/clean
 robot_cleaner/CMakeFiles/robot_cleaner_node.dir/all:
 	$(MAKE) -f robot_cleaner/CMakeFiles/robot_cleaner_node.dir/build.make robot_cleaner/CMakeFiles/robot_cleaner_node.dir/depend
 	$(MAKE) -f robot_cleaner/CMakeFiles/robot_cleaner_node.dir/build.make robot_cleaner/CMakeFiles/robot_cleaner_node.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/matheus/Documentos/ros_studies_ws/build/CMakeFiles --progress-num=18,19 "Built target robot_cleaner_node"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/matheus/Documentos/ros_studies_ws/build/CMakeFiles --progress-num=20,21 "Built target robot_cleaner_node"
 .PHONY : robot_cleaner/CMakeFiles/robot_cleaner_node.dir/all
 
 # Include target in all.

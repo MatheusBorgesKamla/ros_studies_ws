@@ -725,6 +725,19 @@ geometry_msgs_generate_messages_lisp/fast:
 .PHONY : geometry_msgs_generate_messages_lisp/fast
 
 #=============================================================================
+# Target rules for targets named image_pub_sub
+
+# Build rule for target.
+image_pub_sub: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 image_pub_sub
+.PHONY : image_pub_sub
+
+# fast build rule for target.
+image_pub_sub/fast:
+	$(MAKE) -f computer_vision/CMakeFiles/image_pub_sub.dir/build.make computer_vision/CMakeFiles/image_pub_sub.dir/build
+.PHONY : image_pub_sub/fast
+
+#=============================================================================
 # Target rules for targets named geometry_msgs_generate_messages_nodejs
 
 # Build rule for target.
@@ -871,6 +884,7 @@ help:
 	@echo "... geometry_msgs_generate_messages_cpp"
 	@echo "... geometry_msgs_generate_messages_eus"
 	@echo "... geometry_msgs_generate_messages_lisp"
+	@echo "... image_pub_sub"
 	@echo "... geometry_msgs_generate_messages_nodejs"
 	@echo "... turtlesim_generate_messages_eus"
 	@echo "... turtlesim_generate_messages_lisp"

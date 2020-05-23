@@ -1,5 +1,5 @@
-#include <opencv2/opencv.hpp>
-#include <opencv2/highgui.hpp>
+#include "opencv2/highgui/highgui.hpp"
+#include "opencv2/imgproc/imgproc.hpp"
 
 int main(int, char**)
 {
@@ -10,7 +10,8 @@ int main(int, char**)
     cv::Mat gray_image, frame, edges;
     cv::namedWindow("edges",cv::WINDOW_NORMAL);
     cv::namedWindow("gray image",cv::WINDOW_NORMAL);
-    /*while(true)
+    
+    while(true)
     {
         cap.read(frame); // get a new frame from camera
         if(!frame.empty())
@@ -21,8 +22,8 @@ int main(int, char**)
             imshow("gray image", gray_image);
             imshow("edges", edges);
             if(cv::waitKey(30) >= 0) break;
-        }*/
-    //}
+        }
+    }
     // the camera will be deinitialized automatically in VideoCapture destructor
 
     return 0;

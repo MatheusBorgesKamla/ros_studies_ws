@@ -136,6 +136,8 @@ include_directories(
 ## The recommended prefix ensures that target names across packages don't collide
 add_executable(read_video src/read_video.cpp)
 
+add_executable(image_pub_sub src/image_pub_sub.cpp)
+
 ## Rename C++ executable without prefix
 ## The above recommended prefix causes long target names, the following renames the
 ## target back to the shorter version for ease of user use
@@ -149,10 +151,13 @@ add_executable(read_video src/read_video.cpp)
 ## Specify libraries to link a library or executable target against
 target_link_libraries(read_video
 ${catkin_LIBRARIES}
-${OpenCV_INCLUDE_DIRS}
+${OpenCV_LIBRARIES}
 )
 
-
+target_link_libraries(image_pub_sub
+${catkin_LIBRARIES}
+${OpenCV_LIBRARIES}
+)
 
 #############
 ## Install ##

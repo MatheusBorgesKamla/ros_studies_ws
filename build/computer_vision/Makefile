@@ -316,6 +316,21 @@ geometry_msgs_generate_messages_lisp/fast:
 .PHONY : geometry_msgs_generate_messages_lisp/fast
 
 # Convenience name for target.
+computer_vision/CMakeFiles/image_pub_sub.dir/rule:
+	cd /home/matheus/Documentos/ros_studies_ws/build && $(MAKE) -f CMakeFiles/Makefile2 computer_vision/CMakeFiles/image_pub_sub.dir/rule
+.PHONY : computer_vision/CMakeFiles/image_pub_sub.dir/rule
+
+# Convenience name for target.
+image_pub_sub: computer_vision/CMakeFiles/image_pub_sub.dir/rule
+
+.PHONY : image_pub_sub
+
+# fast build rule for target.
+image_pub_sub/fast:
+	cd /home/matheus/Documentos/ros_studies_ws/build && $(MAKE) -f computer_vision/CMakeFiles/image_pub_sub.dir/build.make computer_vision/CMakeFiles/image_pub_sub.dir/build
+.PHONY : image_pub_sub/fast
+
+# Convenience name for target.
 computer_vision/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/rule:
 	cd /home/matheus/Documentos/ros_studies_ws/build && $(MAKE) -f CMakeFiles/Makefile2 computer_vision/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/rule
 .PHONY : computer_vision/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/rule
@@ -329,6 +344,33 @@ geometry_msgs_generate_messages_nodejs: computer_vision/CMakeFiles/geometry_msgs
 geometry_msgs_generate_messages_nodejs/fast:
 	cd /home/matheus/Documentos/ros_studies_ws/build && $(MAKE) -f computer_vision/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build.make computer_vision/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build
 .PHONY : geometry_msgs_generate_messages_nodejs/fast
+
+src/image_pub_sub.o: src/image_pub_sub.cpp.o
+
+.PHONY : src/image_pub_sub.o
+
+# target to build an object file
+src/image_pub_sub.cpp.o:
+	cd /home/matheus/Documentos/ros_studies_ws/build && $(MAKE) -f computer_vision/CMakeFiles/image_pub_sub.dir/build.make computer_vision/CMakeFiles/image_pub_sub.dir/src/image_pub_sub.cpp.o
+.PHONY : src/image_pub_sub.cpp.o
+
+src/image_pub_sub.i: src/image_pub_sub.cpp.i
+
+.PHONY : src/image_pub_sub.i
+
+# target to preprocess a source file
+src/image_pub_sub.cpp.i:
+	cd /home/matheus/Documentos/ros_studies_ws/build && $(MAKE) -f computer_vision/CMakeFiles/image_pub_sub.dir/build.make computer_vision/CMakeFiles/image_pub_sub.dir/src/image_pub_sub.cpp.i
+.PHONY : src/image_pub_sub.cpp.i
+
+src/image_pub_sub.s: src/image_pub_sub.cpp.s
+
+.PHONY : src/image_pub_sub.s
+
+# target to generate assembly for a file
+src/image_pub_sub.cpp.s:
+	cd /home/matheus/Documentos/ros_studies_ws/build && $(MAKE) -f computer_vision/CMakeFiles/image_pub_sub.dir/build.make computer_vision/CMakeFiles/image_pub_sub.dir/src/image_pub_sub.cpp.s
+.PHONY : src/image_pub_sub.cpp.s
 
 src/read_video.o: src/read_video.cpp.o
 
@@ -380,7 +422,11 @@ help:
 	@echo "... geometry_msgs_generate_messages_eus"
 	@echo "... rebuild_cache"
 	@echo "... geometry_msgs_generate_messages_lisp"
+	@echo "... image_pub_sub"
 	@echo "... geometry_msgs_generate_messages_nodejs"
+	@echo "... src/image_pub_sub.o"
+	@echo "... src/image_pub_sub.i"
+	@echo "... src/image_pub_sub.s"
 	@echo "... src/read_video.o"
 	@echo "... src/read_video.i"
 	@echo "... src/read_video.s"

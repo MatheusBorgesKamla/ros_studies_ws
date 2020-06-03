@@ -1,0 +1,8 @@
+prefix=/home/matheus/Documentos/ros_studies_ws/devel
+
+Name: turtle_move_py
+Description: Description of turtle_move_py
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

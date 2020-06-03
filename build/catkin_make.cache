@@ -1,2 +1,2 @@
-cliente:computer_vision:publicador:robot_cleaner:servidor:subscritor
+addtwoints_pack:cliente:computer_vision:iot_sensor:listener:listener_py:publicador:robot_cleaner:servidor:subscritor:talker:talker_py:turtle_move:turtle_move_py
 -DCATKIN_DEVEL_PREFIX=/home/matheus/Documentos/ros_studies_ws/devel -DCMAKE_INSTALL_PREFIX=/home/matheus/Documentos/ros_studies_ws/install -G Unix Makefiles
